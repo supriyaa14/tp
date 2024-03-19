@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Team</title>
+    <style>
+        /* CSS Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+
+        header {
+            background-color:#00FA9A;
+            color: #fff;
+            text-align: center;
+            padding: 0.1em;
+            position: relative;
+        }
+
+        .menu-icon {
+            position: absolute;
+            top: 0.5em;
+            right: 0.5em;
+            cursor: pointer;
+        }
+
+        .menu-content {
+            display: none;
+            position: absolute;
+            top: 4em;
+            right: 1em;
+            background-color:#98FB98;
+            padding: 0.5em;
+            border-radius: 5px;
+        }
+
+        .menu-content a {
+            display: block;
+            color: #fff;
+            text-decoration: none;
+            padding: 0.5em 0;
+        }
+
+        .menu-content a:hover {
+            background-color:  #8FBC8F;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .team-members {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .team-member {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            width: calc(33.33% - 20px);
+            max-width: 300px;
+            text-align: center;
+        }
+
+        .team-member img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background-color:#00FA9A ;
+            color: #fff;
+            text-align: center;
+            padding: 0.001em 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        
+        @media screen and (max-width: 768px) {
+            .team-member {
+                width: calc(50% - 20px);
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .team-member {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>VeriTech Software Services</h1>
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+        <div class="menu-content" id="menuContent">
+            <a href="#management">Management Team</a>
+            <a href="#development">Development Team</a>
+            <a href="#sales">Sales and Marketing Team</a>
+        </div>
+    </header>
+
+    <div class="container">
+        <section id="about-company">
+            <h2>About Us</h2>
+            <p>Veritech Software Services is not just a company; we are a community of passionate professionals dedicated to fostering the next generation of developers. Our virtual internship programs cover a diverse range of development fields. We take pride in providing hands-on experience, expert guidance, and comprehensive learning paths to prepare individuals for successful careers in software development.</p>
+        </section>
+        <br><br>
+        <h3 style="text-align: center;">Management Team</h3>
+           
+   
+        <section id="management" class="team-members">
+            <!-- Management Team members -->
+          
+            <article class="team-member">
+                <img src="p1.jpg" alt="Member 1">
+                <h2>Abdul Gafoor</h2>
+                <p>CEO</p>
+                <p>Successfully turned around struggling company, achieving a 20% increase in profits and a 10% increase in market share within the first year.</p>
+            </article>
+            <article class="team-member">
+                <img src="p3.jpg" alt="Member 2">
+                <h2>Supriyaa</h2>
+                <p>CTO</p>
+                <p>Developed and implemented long-term strategy to drive sustainable growth and market differentiation.</p>
+            </article>
+            <article class="team-member">
+                <img src="p11.png" alt="Member 2">
+                <h2>Kalaivani</h2>
+                <p>Development Officer</p>
+                <p> A highly motivated and experienced Development Officer with a passion for the charity and non-profit sector</p>
+            </article>
+            <article class="team-member">
+                <img src="p4.jpg" alt="Member 2">
+                <h2>Jane Smith</h2>
+                <p>VP,Development and Growth</p>
+             
+            </article>
+            <article class="team-member">
+                <img src="p5.jpg" alt="Member 2">
+                <h2>Jane Smith</h2>
+                <p>VP,Sales and Marketing</p>
+                <p></p>
+            </article>
+        </section>
+        <br><br>
+        <h3 style="text-align: center;">Development Team</h3>
+        <section id="development" class="team-members">
+            <!-- Development Team members -->
+            <article class="team-member">
+                <img src="p10.jpg" alt="Member 3">
+                <h2>Subhithra varshu</h2>
+                <p>Lead Developer</p>
+                
+            </article>
+            <article class="team-member">
+                <img src="p13.jpg" alt="Member 4">
+                <h2>tejashri</h2>
+                <p>Software Engineer</p>
+               
+            </article>
+            <article class="team-member">
+                <img src="p12.jpg" alt="Member 3">
+                <h2>mukesh</h2>
+                <p>Software Engineer</p>
+              
+            </article>
+            <article class="team-member">
+                <img src="p6.jpg" alt="Member 4">
+                <h2>Emily Brown</h2>
+                <p>Software Engineer</p>
+               
+            </article>
+            <article class="team-member">
+                <img src="p14.jpg" alt="Member 3">
+                <h2>Supraja</h2>
+                <p>Software Engineer</p>
+                
+            </article>
+            <article class="team-member">
+                <img src="p20.jpg" alt="Member 4">
+                <h2>Jackie Chan</h2>
+                <p>Software Engineer</p>
+               
+            </article>
+        </section>
+        <br><br>
+        <h3 style="text-align: center;">Sales and Marketing Team</h3>
+        <section id="sales" class="team-members">
+            <!-- Sales and Marketing Team members -->
+            <article class="team-member">
+                <img src="p15.jpg" alt="Member 5">
+                <h2>Michael Clark</h2>
+                <p>Head of Sales</p>
+               
+                <br>
+            </article>
+            
+            <article class="team-member">
+                <img src="p16.jpg" alt="Member 6">
+                <h2>Sarah White</h2>
+                <p>Marketing Manager</p>
+                
+            </article>
+        </section>
+    </div>
+    <br><br>
+    <br><br>
+
+    <footer>
+        <p>&copy; 2024 VeriTech Software Services <img style="vertical-align: middle;" src="U3CaewPP4rgIuoxPLRVU4-transformed.png" width="60px" height="35px" ></p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            var menuContent = document.getElementById("menuContent");
+            menuContent.style.display = (menuContent.style.display === "block") ? "none" : "block";
+        }
+    </script>
+</body>
+</html>
